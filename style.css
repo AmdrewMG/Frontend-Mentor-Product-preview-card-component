@@ -1,0 +1,118 @@
+:root{
+ --Darkcyan: hsl(158, 36%, 37%);
+ --Cream: hsl(30, 38%, 92%);
+ --verydarkblue: hsl(212, 21%, 14%);
+ --darkgrayishblue: hsl(228, 12%, 48%);
+ --White: hsl(0, 0%, 100%);
+ 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    background: var(--Cream);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#content{
+    display: flex;
+    max-width: 38rem;
+    background: var(--White);
+    box-shadow: 0 1rem 1.5rem 0 hsl(228, 12%, 58%);
+    border-radius: 0.7rem;
+}
+ img{
+    max-width: 18rem;
+    height: 100%;
+    border-radius:0.7rem 0 0 0.7rem ;
+}
+
+.text{
+    display: grid;
+    align-items: center;
+    align-content: space-evenly;
+    margin: 1rem;
+}
+
+#name{
+    color: var(--darkgrayishblue);
+    letter-spacing: 0.3em;
+    font-size: 0.9em;
+}
+
+#tittle{
+    font-family: 'Fraunces', serif;
+    font-size: 2.08em;
+    text-align: inherit;
+    color: var(--verydarkblue);
+}
+
+#description{
+    color: var(--darkgrayishblue);
+    font-size: 1em;
+    line-height: 1.5rem;
+}
+
+#text-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.price{
+    display: flex;
+    color: var(--Darkcyan);
+    font-family: 'Fraunces';
+    font-size: 2em;
+}
+
+.principal-price{
+    display:flex;
+    font-size: 0.7em;
+    color: var(--darkgrayishblue);
+    text-decoration: line-through;
+}
+
+button{
+    display: flex;
+    background: var(--Darkcyan);
+    border-radius: 0.5rem;
+    justify-content: center;
+    width: 100%;
+    min-height: auto;
+    color: var(--White);
+    font-size: 1em;
+    font-family: 'Fraunces';
+    align-items: center;
+    padding: 1em;
+    border: none;
+}
+.icon{
+    display: flex;
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.attribution{
+    display: none;
+}
+
+@media(max-width: 640px){
+    #content{
+        flex-direction: column;
+        max-width: 70%;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.7rem 0.7rem 0  0;
+    }
+}
