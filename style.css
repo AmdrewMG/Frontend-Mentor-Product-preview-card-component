@@ -39,7 +39,7 @@ body{
     display: grid;
     align-items: center;
     align-content: space-evenly;
-    margin: 1rem;
+    padding: 1rem;
 }
 
 #name{
@@ -64,7 +64,7 @@ body{
 #text-price{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .price{
@@ -79,6 +79,7 @@ body{
     font-size: 0.7em;
     color: var(--darkgrayishblue);
     text-decoration: line-through;
+    padding-left: 0.7rem;
 }
 
 button{
@@ -108,11 +109,28 @@ button{
 @media(max-width: 640px){
     #content{
         flex-direction: column;
-        max-width: 70%;
+        max-width: 60%;
     }
     img{
         max-width: 100%;
         height: auto;
         border-radius: 0.7rem 0.7rem 0  0;
+    }
+ #tittle{
+        text-align: inherit ;
+    }
+    .text{
+        padding: 1rem;
+        grid-gap: 1.5rem;
+    }
+    #text-price{
+        display: flex; 
+        justify-content: center;
+    }
+    button{
+        display: flex;
+    }
+    .principal-price{
+        padding-left: 0.7rem;
     }
 }
